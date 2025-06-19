@@ -189,21 +189,21 @@ img {
   height: 120px;
   background-color: var(--light-bg-color);
   margin-bottom: 30px;
-  background-image: url("./img/antenna.svg");
+  background-image: url("../img/antenna.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .features-item:nth-child(2)::before {
-  background-image: url("./img/clock.svg");
+  background-image: url("../img/clock.svg");
 }
 
 .features-item:nth-child(3)::before {
-  background-image: url("./img/diagram.svg");
+  background-image: url("../img/diagram.svg");
 }
 
 .features-item:nth-child(4)::before {
-  background-image: url("./img/astronaut.svg");
+  background-image: url("../img/astronaut.svg");
 }
 
 .features-title {
