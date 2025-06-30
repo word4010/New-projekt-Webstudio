@@ -6,7 +6,8 @@
   --dark-bg-color: #2f303a;
   --light-bg-color: #f5f4fa;
   --header-bg-color: #ffffff;
-  --hero-overlay-color: rgba(47, 48, 58, 0.4);
+   --hero-overlay-color: rgba(47, 48, 58, 0.4); 
+  
 }
 
 body {
@@ -123,19 +124,22 @@ img {
   color: var(--accent-color);
 }
 
-.hero-section {
+ .hero-section {
   background-color: var(--dark-bg-color);
   background-image: linear-gradient(
-      var(--hero-overlay-color),
-      var(--hero-overlay-color)
-    ),
-    url("https://via.placeholder.com/1600x600/363636/FFFFFF?text=Hero+Background");
+    var(--hero-overlay-color),
+    var(--hero-overlay-color)
+  ),
+  url("https://content.freelancehunt.com/snippet/13613/37f1d/1780114/webstudio.png");
   background-size: cover;
   background-position: center;
   padding: 200px 0;
   text-align: center;
   color: var(--white-color);
-}
+}  
+
+
+
 
 .hero-title {
   font-weight: 900;
@@ -166,7 +170,7 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188ce8;
+  background-color: var(--accent-color);
 }
 
 .features-section {
@@ -243,6 +247,29 @@ img {
 .main {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+
+.main_nav_list {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.main_nav_button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.main_nav_button:hover {
+  background-color: var(--accent-color);
 }
 
 .main_list {
