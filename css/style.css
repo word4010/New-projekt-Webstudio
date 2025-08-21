@@ -120,6 +120,17 @@ img {
   color: var(--secondary-text-color);
 }
 
+.contact-accent{
+  color: var(--secondary-text-color);
+  width: 22px;
+  height: 16px;
+  padding-right: 10px;
+}
+
+.contacts-item:hover{
+color: var(--accent-color);
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .contact-link:hover,
