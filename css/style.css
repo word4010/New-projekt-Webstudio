@@ -120,15 +120,15 @@ img {
   color: var(--secondary-text-color);
 }
 
-.contact-accent{
+.contact-accent {
   color: var(--secondary-text-color);
   width: 22px;
   height: 16px;
   padding-right: 10px;
 }
 
-.contacts-item:hover{
-color: var(--accent-color);
+.contacts-item:hover {
+  color: var(--accent-color);
 }
 
 .nav-link:hover,
@@ -438,4 +438,34 @@ color: var(--accent-color);
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--accent-color);
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #afb1b8;
+  color: var(--white-color);
+  border-radius: 50%;
+}
+
+.list-item:hover {
+  background-color: var(--accent-color);
+  transform: translateY(2px);
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
