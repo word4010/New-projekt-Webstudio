@@ -235,25 +235,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-/* 
-.what-we-do-section {
-  padding-top: 0;
-  background-color: var(--white-color);
-}
-
-.what-we-do-list {
-  display: flex;
-  gap: 30px;
-}
-
-.what-we-do-item {
-  flex-basis: calc((100% - 60px) / 3);
-}
-
-.team-section {
-  background-color: var(--light-bg-color);
-} */
-
 
     .what-we-do-section {
             padding-top: 0;
