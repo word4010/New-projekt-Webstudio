@@ -121,10 +121,10 @@ img {
 }
 
 .contact-accent {
-  color: var(--secondary-text-color);
   width: 22px;
   height: 16px;
   padding-right: 10px;
+  fill: currentColor;
 }
 
 .contacts-item:hover {
@@ -348,6 +348,7 @@ img {
 .social-item:hover {
   background-color: var(--accent-color);
   transform: translateY(2px);
+  color: white;
 }
 
 .social-icon {
