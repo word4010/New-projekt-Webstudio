@@ -92,50 +92,70 @@ img {
   color: var(--white-color);
 }
 
-.nav {
-  margin-right: auto;
-}
-
-.nav-list,
-.contacts-list {
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   gap: 50px;
 }
 
 .nav-link,
 .contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  display: block;
+  padding: 16px 0;
+  text-decoration: none;
   color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  position: relative;
+  transition: color 0.3s ease-in-out;
 }
 
-#accent-link {
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  display: none;
+}
+
+.nav-link.accent-link::after {
+  display: block;
+}
+
+.nav-link.accent-link {
   color: var(--accent-color);
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .contact-link {
-  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-
 .contact-accent {
-  width: 22px;
-  height: 16px;
-  padding-right: 10px;
-  fill: currentColor;
+  fill: var(--secondary-text-color);
+  transition: fill 0.3s ease-in-out;
+  width: 20px;
+  height: 20px;
 }
 
-.contacts-item:hover {
-  color: var(--accent-color);
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-  color: var(--accent-color);
+.contact-link:hover .contact-accent {
+  fill: var(--accent-color);
 }
 
 .hero-section {
@@ -315,10 +335,30 @@ img {
 }
 
 .main_list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 1023px) {
+  .main_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .main_list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.projekt_item {
+  border: 1px solid #eeeeee;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .projekt_item:hover {
@@ -326,8 +366,62 @@ img {
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
-.main_list li {
-  flex-basis: calc((100% - 2 * 30px) / 3);
+.project-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  padding: 24px;
+}
+
+.projekt_item:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay-text {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.project-details {
+  padding: 20px 24px;
+  background-color: #ffffff;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.project-category {
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
 }
 
 .team-list {
@@ -521,7 +615,6 @@ img {
   gap: 1rem;
 }
 
-
 .footer-heading {
   text-transform: uppercase;
   font-weight: 700;
@@ -540,9 +633,9 @@ img {
 .subscribe-input {
   flex-grow: 1;
   padding: 0.5rem 1rem;
-  background-color:  var(--dark-bg-color);
-  border-radius: 0.375rem; 
-  border: 1px solid #4a5568; 
+  background-color: var(--dark-bg-color);
+  border-radius: 0.375rem;
+  border: 1px solid #4a5568;
   outline: none;
   transition: border-color 0.3s, box-shadow 0.3s;
   color: white;
@@ -553,13 +646,13 @@ img {
 }
 
 .subscribe-input:focus {
-  border-color: var(--accent-color) ;  
+  border-color: var(--accent-color);
   box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Відповідає focus:ring-2 */
 }
 
 .subscribe-button {
   padding: 0.5rem 1.5rem;
-  background-color: var(--accent-color); 
+  background-color: var(--accent-color);
   color: #ffffff;
   font-weight: 700;
   border-radius: 0.375rem;
@@ -579,6 +672,12 @@ img {
 .subscribe-form {
   flex-direction: row;
   gap: 0.5rem;
+}
+
+.subscribe-accent {
+  width: 18px;
+  height: 18px;
+  fill: var(--header-bg-color);
 }
 
 .modal-bg {
