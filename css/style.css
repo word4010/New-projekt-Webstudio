@@ -619,14 +619,14 @@ img {
 }
 
 .close-btn {
-  color: #6b7280;
+  fill: var(--secondary-text-color);
   transition: color 0.3s;
   width: 18px;
   height: 18px;
 }
 
 .close-btn:hover {
-  color: #4b5563;
+  fill: var(--accent-color);
 }
 
 .form-group {
