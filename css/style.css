@@ -72,6 +72,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .logo {
@@ -81,15 +84,12 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  text-decoration: none;
   margin-right: 93px;
 }
 
 .logo-dark {
   color: #000000;
-}
-
-.logo-light {
-  color: var(--white-color);
 }
 
 .nav-list {
@@ -106,7 +106,7 @@ img {
   padding: 16px 0;
   text-decoration: none;
   color: var(--primary-text-color);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
   position: relative;
@@ -122,15 +122,26 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 4px;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .nav-link.accent-link::after {
-  display: block;
+  opacity: 1;
 }
 
 .nav-link.accent-link {
   color: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  opacity: 1;
 }
 
 .contacts-list {
@@ -146,7 +157,14 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--secondary-text-color);
 }
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
+
 .contact-accent {
   fill: var(--secondary-text-color);
   transition: fill 0.3s ease-in-out;
@@ -154,7 +172,8 @@ img {
   height: 20px;
 }
 
-.contact-link:hover .contact-accent {
+.contact-link:hover .contact-accent,
+.contact-link:focus .contact-accent {
   fill: var(--accent-color);
 }
 
