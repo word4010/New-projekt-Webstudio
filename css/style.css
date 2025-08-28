@@ -594,7 +594,7 @@ img {
 
 .modal-content {
   background-color: #ffffff;
-  padding: 1.5rem;
+  padding: 40px;
   border-radius: 0.75rem;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -641,6 +641,8 @@ img {
 }
 
 .label-accent {
+  position: absolute;
+  transform: translateY(32px) translateX(10px);
   width: 18px;
   height: 18px;
   padding-right: 10px;
