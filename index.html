@@ -75,7 +75,13 @@
       <section class="hero-section">
         <div class="container hero-container">
           <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button
+            type="button"
+            id="openModalBtn"
+            class="hero-button open-modal-btn"
+          >
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -364,5 +370,106 @@
         </address>
       </div>
     </footer>
+    <div id="modal" class="modal-bg hidden">
+      <div class="modal-content">
+        <!-- Заголовок і кнопка закриття -->
+        <div class="modal-header">
+          <h2>Залиште свої дані, ми вам передзвонимо</h2>
+          <button id="closeModalBtn" class="close-btn">
+            <svg class="close-btn">
+             <use href="./img/symbol-defs.svg#close-btn">
+              
+             </use>
+
+            </svg>
+          </button>
+        </div>
+
+        <!-- Форма -->
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Введення імені -->
+  <input type="hidden" name="access_key" value="e8d298fb-f090-4a4b-b79c-1c3030b312c4">
+
+          <div class="form-group">
+            <label for="name" class="form-label"><svg class="label-accent" >
+              <use href="./img/symbol-defs.svg#name"></use>
+            </svg>Ім'я</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ім'я"
+              class="form-input"
+              required
+              minlength="2"
+            />
+          </div>
+          <!-- Введення телефону -->
+          <div class="form-group">
+            <label for="phone" class="form-label"><svg class="label-accent">
+              <use href="./img/symbol-defs.svg#phone1"></use>
+            </svg>Телефон</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+380 (XX) XXX-XX-XX"
+              class="form-input"
+              required
+            />
+          </div>
+          <!-- Введення пошти -->
+          <div class="form-group">
+            <label for="email" class="form-label"><svg class="label-accent">
+              <use href="./img/symbol-defs.svg#mail1">
+              </use>
+            </svg>Пошта</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Пошта"
+              class="form-input"
+              required
+              minlength="15"
+            />
+          </div>
+          <!-- Введення коментаря -->
+          <div class="form-group">
+            <label for="comment" class="form-label"><svg  class="label-accent">
+              <use href="./img/symbol-defs.svg#comment"></use>
+            </svg>Коментар</label>
+            <textarea
+              id="comment"
+              name="comment"
+              rows="4"
+              placeholder="Ваш текст"
+              class="form-textarea"
+            ></textarea>
+          </div>
+
+          <!-- Галочка згоди -->
+          <div class="consent-group">
+            <input type="checkbox" id="consent" name="consent" required />
+            <label for="consent">
+              Погоджуюся з розсилкою та приймаю
+              <a href="./public-contract.docx" download  class="consent-link">Умови договору</a>
+            </label>
+          </div>
+
+          <!-- Кнопка відправки -->
+          <div class="submit-btn-container">
+            <button type="submit" class="submit-btn">Відправити</button>
+          </div>
+        </form>
+
+        <!-- Повідомлення про відправлення -->
+        <div id="successMessage" class="success-message hidden">
+          Дякуємо! Ваші дані успішно відправлено.
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
