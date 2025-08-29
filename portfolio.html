@@ -247,8 +247,9 @@
         </ul>
       </div>
     </main>
-    <footer class="footer" id="contact">
-      <div class="container">
+       <footer class="footer" id="contact">
+      <div class="container footer-container">
+        <div class="footer-section">
         <a href="./index.html" class="logo"
           >Web<span class="logo-light">Studio</span></a
         >
@@ -266,8 +267,11 @@
               >
             </li>
           </ul>
+           </address>
+          </div>
+          <div class="footer-section" >
+                <h3 class="footer-list-title">Приєднуйтесь</h3>
           <ul class="footer-list">
-            <h3 class="footer-list-title">Приєднуйтесь</h3>
             <li class="list-item">
               <svg class="footer-icon">
                 <use href="./img/symbol-defs.svg#icon-instagram"></use>
@@ -289,25 +293,18 @@
               </svg>
             </li>
           </ul>
-        </address>
-        <div class="footer-column">
+          </div>
+           <div class="footer-section footer-column">
           <h3 class="footer-heading">Підпишіться на розсилку</h3>
           <form action="#" class="subscribe-form">
-            <input
-              type="email"
-              placeholder="E-mail"
-              required
-              class="subscribe-input"
-            />
-            <button type="submit" class="subscribe-button">
-              <span
-                >Підписатися
-                <svg class="subscribe-accent">
-                  <use href="./img/symbol-defs.svg#telegram"></use></svg>
-              </span>
-            </button>
+              <input  type="email"  placeholder="E-mail" required class="subscribe-input">
+              <button type="submit" class="subscribe-button">
+                  <span class="subscribe-button-text">Підписатися <svg class="subscribe-accent">
+                    <use href="./img/symbol-defs.svg#telegram"></use>
+                  </svg></span>
+              </button>
           </form>
-        </div>
+      </div>
       </div>
     </footer>
   </body>
