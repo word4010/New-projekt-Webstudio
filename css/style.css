@@ -551,6 +551,8 @@ img {
   fill: #2196f3;
 }
 
+/*  */
+
 .footer {
   background-color: var(--dark-bg-color);
   padding: 60px 0;
@@ -702,7 +704,6 @@ img {
 .subscribe-input {
   flex-grow: 1;
   padding: 15px 16px;
-  height: 50px;
   width: 350px;
   background-color: var(--dark-bg-color);
   border-radius: 4px;
@@ -719,6 +720,8 @@ img {
 .subscribe-input:focus {
   border-color: var(--accent-color);
 }
+
+  
 
 .subscribe-button {
  padding-left: 28px;
@@ -756,6 +759,9 @@ img {
   fill: var(--white-color);
 }
 
+
+
+/* !Модалка */
 .modal-bg {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
