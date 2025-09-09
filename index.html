@@ -28,7 +28,13 @@
     <link rel="stylesheet" href="http://necolas.github.com/normalize.css/" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-  </head>
+   <!-- Звичайний комент -->
+    <!-- //Помилка -->
+     <!-- ?Цікавинки, увага -->
+      <!-- !Увага -->
+       <!-- todo Помилка -->
+
+      </head>
   <body>
     <header class="header">
       <div class="container header-container">
@@ -38,7 +44,10 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link accent-link" id="accent-link"
+              <a
+                href="./index.html"
+                class="nav-link accent-link"
+                id="accent-link"
                 >Студія</a
               >
             </li>
@@ -325,30 +334,30 @@
         </div>
       </section>
     </main>
-     <footer class="footer" id="contact">
+    <footer class="footer" id="contact">
       <div class="container footer-container">
         <div class="footer-section">
-        <a href="./index.html" class="logo"
-          >Web<span class="logo-light">Studio</span></a
-        >
-        <address class="address">
-          <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
-          <ul class="footer-contacts-list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="footer-contact-link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="footer-contact-link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-           </address>
-          </div>
-          <div class="footer-section" >
-                <h3 class="footer-list-title">Приєднуйтесь</h3>
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-light">Studio</span></a
+          >
+          <address class="address">
+            <p class="address-text">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="footer-contacts-list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="footer-contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="footer-contact-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-list-title">Приєднуйтесь</h3>
           <ul class="footer-list">
             <li class="list-item">
               <svg class="footer-icon">
@@ -371,29 +380,31 @@
               </svg>
             </li>
           </ul>
-          </div>
-          <!-- !Subscribe -->
-           <div class="footer-section footer-column">
+        </div>
+        <!-- !Subscribe -->
+        <div class="footer-section footer-column">
           <h3 class="footer-heading">Підпишіться на розсилку</h3>
           <form action="#" class="subscribe-form">
-              <input  type="email"  placeholder="E-mail" required class="subscribe-input">
-              <button type="submit" class="subscribe-button">
-                  <span class="subscribe-button-text">Підписатися <svg class="subscribe-accent">
-                    <use href="./img/symbol-defs.svg#telegram"></use>
-                  </svg></span>
-              </button>
+            <input
+              type="email"
+              placeholder="E-mail"
+              required
+              class="subscribe-input"
+            />
+            <button type="submit" class="subscribe-button">
+              <span class="subscribe-button-text"
+                >Підписатися
+                <svg class="subscribe-accent">
+                  <use href="./img/symbol-defs.svg#telegram"></use></svg
+              ></span>
+            </button>
           </form>
-      </div>
+        </div>
       </div>
     </footer>
-   
-    
-    
-    
-    
-    
-    
-    
+
+    <!--   -->
+
     <div id="modal" class="modal-bg hidden">
       <div class="modal-content">
         <!-- Заголовок і кнопка закриття -->
@@ -401,23 +412,30 @@
           <h2>Залиште свої дані, ми вам передзвонимо</h2>
           <button id="closeModalBtn" class="close-btn">
             <svg class="close-btn">
-             <use href="./img/symbol-defs.svg#close-btn">
-              
-             </use>
-
+              <use href="./img/symbol-defs.svg#close-btn"></use>
             </svg>
           </button>
         </div>
 
         <!-- Форма -->
-        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+        <form
+          id="contactForm"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
           <!-- Введення імені -->
-  <input type="hidden" name="access_key" value="e8d298fb-f090-4a4b-b79c-1c3030b312c4">
+          <input
+            type="hidden"
+            name="access_key"
+            value="e8d298fb-f090-4a4b-b79c-1c3030b312c4"
+          />
 
           <div class="form-group">
-            <label for="name" class="form-label"><svg class="label-accent" >
-              <use href="./img/symbol-defs.svg#name"></use>
-            </svg>Ім'я</label>
+            <label for="name" class="form-label"
+              ><svg class="label-accent">
+                <use href="./img/symbol-defs.svg#name"></use></svg
+              >Ім'я</label
+            >
             <input
               type="text"
               id="name"
@@ -429,9 +447,11 @@
           </div>
           <!-- Введення телефону -->
           <div class="form-group">
-            <label for="phone" class="form-label"><svg class="label-accent">
-              <use href="./img/symbol-defs.svg#phone1"></use>
-            </svg>Телефон</label>
+            <label for="phone" class="form-label"
+              ><svg class="label-accent">
+                <use href="./img/symbol-defs.svg#phone1"></use></svg
+              >Телефон</label
+            >
             <input
               type="tel"
               id="phone"
@@ -442,10 +462,11 @@
           </div>
           <!-- Введення пошти -->
           <div class="form-group">
-            <label for="email" class="form-label"><svg class="label-accent">
-              <use href="./img/symbol-defs.svg#mail1">
-              </use>
-            </svg>Пошта</label>
+            <label for="email" class="form-label"
+              ><svg class="label-accent">
+                <use href="./img/symbol-defs.svg#mail1"></use></svg
+              >Пошта</label
+            >
             <input
               type="email"
               id="email"
@@ -472,7 +493,9 @@
             <input type="checkbox" id="consent" name="consent" required />
             <label for="consent">
               Погоджуюся з розсилкою та приймаю
-              <a href="./public-contract.docx" download  class="consent-link">Умови договору</a>
+              <a href="./public-contract.docx" download class="consent-link"
+                >Умови договору</a
+              >
             </label>
           </div>
 
