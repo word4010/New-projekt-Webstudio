@@ -28,13 +28,12 @@
     <link rel="stylesheet" href="http://necolas.github.com/normalize.css/" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-   <!-- Звичайний комент -->
+    <!-- Звичайний комент -->
     <!-- //Помилка -->
-     <!-- ?Цікавинки, увага -->
-      <!-- !Увага -->
-       <!-- todo Помилка -->
-
-      </head>
+    <!-- ?Цікавинки, увага -->
+    <!-- !Увага -->
+    <!-- todo Помилка -->
+  </head>
   <body>
     <header class="header">
       <div class="container header-container">
@@ -395,25 +394,25 @@
               <span class="subscribe-button-text"
                 >Підписатися
                 <svg class="subscribe-accent">
-                  <use href="./img/symbol-defs.svg#telegram"></use></svg
-              ></span>
+                  <use href="./img/symbol-defs.svg#telegram"></use>
+                </svg>
+                </span
+              >
             </button>
           </form>
         </div>
       </div>
     </footer>
 
-    <!--   -->
-
+    <!-- !Модалка -->
     <div id="modal" class="modal-bg hidden">
       <div class="modal-content">
         <!-- Заголовок і кнопка закриття -->
         <div class="modal-header">
           <h2>Залиште свої дані, ми вам передзвонимо</h2>
           <button id="closeModalBtn" class="close-btn">
-            <svg class="close-btn">
-              <use href="./img/symbol-defs.svg#close-btn"></use>
-            </svg>
+            <!-- Замінив SVG на простий символ, оскільки SVG-файли не підключені -->
+            &times;
           </button>
         </div>
 
@@ -433,24 +432,25 @@
           <div class="form-group">
             <label for="name" class="form-label"
               ><svg class="label-accent">
-                <use href="./img/symbol-defs.svg#name"></use></svg
-              >Ім'я</label
+                <use href="./img/symbol-defs.svg#name"></use></svg>
+              Ім'я</label
             >
             <input
               type="text"
-              id="name"
               name="name"
-              class="form-input"
               required
+              id="name"
+              class="form-input"
               minlength="2"
             />
           </div>
+
           <!-- Введення телефону -->
           <div class="form-group">
             <label for="phone" class="form-label"
               ><svg class="label-accent">
-                <use href="./img/symbol-defs.svg#phone1"></use></svg
-              >Телефон</label
+                <use href="./img/symbol-defs.svg#phone1"></use></svg>
+              Телефон</label
             >
             <input
               type="tel"
@@ -460,12 +460,13 @@
               required
             />
           </div>
+
           <!-- Введення пошти -->
           <div class="form-group">
             <label for="email" class="form-label"
               ><svg class="label-accent">
-                <use href="./img/symbol-defs.svg#mail1"></use></svg
-              >Пошта</label
+                <use href="./img/symbol-defs.svg#mail1"></use></svg>
+              Пошта</label
             >
             <input
               type="email"
@@ -476,6 +477,7 @@
               minlength="15"
             />
           </div>
+
           <!-- Введення коментаря -->
           <div class="form-group">
             <label for="comment" class="form-label">Коментар</label>
@@ -493,9 +495,7 @@
             <input type="checkbox" id="consent" name="consent" required />
             <label for="consent">
               Погоджуюся з розсилкою та приймаю
-              <a href="./public-contract.docx" download class="consent-link"
-                >Умови договору</a
-              >
+              <a href="./public-contract.docx" class="consent-link">Умови договору</a>
             </label>
           </div>
 
