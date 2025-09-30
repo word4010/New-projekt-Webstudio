@@ -25,6 +25,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="http://necolas.github.com/normalize.css/" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -37,7 +41,7 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="logo"
+        <a href="./index.html" class="logo animate__animated animate__jello"
           >Web<span class="logo-dark">Studio</span></a
         >
         <nav class="nav">
@@ -396,8 +400,7 @@
                 <svg class="subscribe-accent">
                   <use href="./img/symbol-defs.svg#telegram"></use>
                 </svg>
-                </span
-              >
+              </span>
             </button>
           </form>
         </div>
@@ -432,7 +435,8 @@
           <div class="form-group">
             <label for="name" class="form-label"
               ><svg class="label-accent">
-                <use href="./img/symbol-defs.svg#name"></use></svg>
+                <use href="./img/symbol-defs.svg#name"></use>
+              </svg>
               Ім'я</label
             >
             <input
@@ -449,7 +453,8 @@
           <div class="form-group">
             <label for="phone" class="form-label"
               ><svg class="label-accent">
-                <use href="./img/symbol-defs.svg#phone1"></use></svg>
+                <use href="./img/symbol-defs.svg#phone1"></use>
+              </svg>
               Телефон</label
             >
             <input
@@ -465,7 +470,8 @@
           <div class="form-group">
             <label for="email" class="form-label"
               ><svg class="label-accent">
-                <use href="./img/symbol-defs.svg#mail1"></use></svg>
+                <use href="./img/symbol-defs.svg#mail1"></use>
+              </svg>
               Пошта</label
             >
             <input
@@ -495,7 +501,9 @@
             <input type="checkbox" id="consent" name="consent" required />
             <label for="consent">
               Погоджуюся з розсилкою та приймаю
-              <a href="./public-contract.docx" class="consent-link">Умови договору</a>
+              <a href="./public-contract.docx" class="consent-link"
+                >Умови договору</a
+              >
             </label>
           </div>
 
